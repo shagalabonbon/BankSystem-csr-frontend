@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "baseUrl": "./src",             // 簡化 import 根目錄 ( 不需要再寫 .././ )
+        "checkJs": true,                
+        "jsx": "react"
+    },
+    "exclude": ["node_modules", "**/node_modules/*"]
+}
