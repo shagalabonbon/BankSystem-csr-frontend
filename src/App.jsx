@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { AdminLayout, MainLayout, UserLayout } from "./layouts";
 import IndexPage from "./pages/IndexPage";
 import { AdminLogin, Recovery, RecoveryReset, RecoveryResult, RecoveryVerify, Register, UserLogin } from "./pages/auth";
@@ -76,7 +75,7 @@ function App() {
 
 
 
-            <Route path="*" element={ <><ErrorPage/> <Helmet><title>error</title></Helmet></>} />   {/* Route path="*" 讓所有未知路由都進入 404 頁面 */}
+            <Route path="*" element={ <><ErrorPage/></>} />   {/* Route path="*" 讓所有未知路由都進入 404 頁面 */}
 
           </Route>
         </Routes>
